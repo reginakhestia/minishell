@@ -1,0 +1,22 @@
+ls | | | ls ; ls -la	Ошибка: syntax error near unexpected token '|'
+ls ||| ls ; ls -la		Ошибка: syntax error near unexpected token '|'
+ls|||ls;ls -la			Ошибка: syntax error near unexpected token '|'
+test.txt > test2.txt	Ошибка: shell: test.txt: command not found, но создастся пустой файл
+echo *Ma*				должен напечататься Makefile
+echo .*/				отображает только скрытые директории
+echo ./*/				отображает только видимые директории (с приставкой)
+
+если много форков		shell: fork: Resource temporarily unavailable
+
+cat << 4 << 6 << 3 > 1 | cat < abc >> 2 | wc -l << 4 > 3 | wc -l << 1 cat > abc | pwd >> abc
+
+export a= 'ls -la' должна быть ошибка
+echo ** DJIDDVJJ*** Vvc** 8 *VUVJ8jVJ * *JVJV* JV *vJ*
+echo $LANG+$KLJ+'$PWD'+"$HOME"+"'$SHLVL'"=$COLORTERM
+
+TODO:закрытие лишних fd
+
+echo < 7 | wc		при отсутствии файла апп не запускается, но срабатывает следующий
+ls < 4 | ls < 5
+export | wc
+lsof -cminishell проверить открытые файловые дескрипторы
